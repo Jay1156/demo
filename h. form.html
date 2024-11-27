@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>new tab</title>
+    </head>
+    <body>
+        <h2>Form Registration</h2>
+        <form action="/action.php">
+            <!--
+            form
+                -An HTML form is used to collect user input
+                -It is represented by <form> tag containing different type o f input element in it
+                    -Action attribute helps the form to redirect the page to another, if 
+                    submitte through the button in the form-->
+            <input type="text" placeholder="UserName">
+            <br>
+            <input type="password" placeholder="password">
+            <br><br>
+            <h5>Select your Class</h5>
+            <label><!-- -A label tag is used to disclose a text in the form,
+                            referring for to the input field.
+                        -"For" key in attribute is mapped with the input
+                            element id to find the rfespectibve field to it -->     
+            <input type="radio" value="class XI" name="class" id="98">class XI
+            </label> <!--label is used for making a word clickable-->
+            <br>
+            <label>
+            <input type="radio" value="ClassXII" name="class" id="99">classXII
+        </label>
+            <!-- 
+            INPUT TAG
+                - Having  an input field to store the users data
+                -Default input is of text type
+                -Attributes
+                    -required : Makes the input field mandatory
+                    -Disabeled : Makes the input field inactive
+                    -checked- : Makes the selected checkbox checked
+                    -Placeholder: Helps the user to understand about an input field
+                    
+            -Types
+                -Text (default state)
+                - Number    
+                -date
+                -password
+                -email
+                -color
+                -url
+                -file
+                -time
+                -DateTime
+                -Radio
+                -Buttons
+                    -submit 
+                    -Reset-->
+            <br>
+            <br>
+            <h5>Date of Birth</h5>
+            <input type="date" placeholder="Date of birth">
+            <br>
+            <br>
+            <h5>Enter your Email</h5>
+            <input type="email" placeholder="Email">
+            <br>
+            <br>
+            <input type="datetime" placeholder="date and time">
+
+            <br><br>
+            <h5>select your favourite subject</h5>
+            <label>
+            <input type="checkbox" value="Maths" name="subject" id="101">Maths
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" value="Physics" name="subject" id="102">Physics
+            </label>
+            <br>
+            <label>
+            <input type="checkbox" value="Biology" name="subject" id="103">Biology
+            </label>
+            <br><br>
+            <!--for dropdown/option-->
+            <h5>Select your city</h5>
+            <select  name="city">
+                <option value="delhi">delhi</option>
+                <option value="nagpur">nagpur</option>
+                <option value="pune">pune</option>
+                <option value="mumbai">mumbai</option>
+            </select>
+            <br><br>
+            <!--for giving feedbacks-->
+            <textarea name="feedback" placeholder="please give your valuable suggestion here">feedback</textarea>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <iframe src="https://www.wikipedia.org/"></iframe>
+    </body>
+</html>
